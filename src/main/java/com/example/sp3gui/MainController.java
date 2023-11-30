@@ -19,9 +19,6 @@ import java.util.List;
 import javafx.scene.control.TextField;
 import java.util.ResourceBundle;
 
-
-
-
 public class MainController implements Initializable {
     private FileIO io;
     private Media media;
@@ -38,6 +35,7 @@ public class MainController implements Initializable {
     private TextField passwordField;
     @FXML
     private TextArea outputArea;
+
     public ListView<String> ListView1 = new ListView<String>();
     public ListView<String> ListView2 = new ListView<String>();
     public ListView<String> ListView3 = new ListView<String>();
@@ -72,6 +70,7 @@ public class MainController implements Initializable {
 
     }
 
+    // Logs into existing user.
     @FXML
     void loginPressed(ActionEvent event) {
 
@@ -115,8 +114,7 @@ public class MainController implements Initializable {
         alert.showAndWait();
     }
 
-    // Creates a new user
-    // Loads user with io.login given the information from created user.
+    // Creates a new user.
     @FXML
     private void registerPressed(ActionEvent event) {
         try {
@@ -131,7 +129,6 @@ public class MainController implements Initializable {
                         Parent root = loader.load();
                         userChoices.setScene(new Scene(root, 800, 600));
                         userChoices.show();
-
 
                     } catch (IOException e) {
                         showErrorDialog("Error1", "An error occurred while loading the next screen.");
