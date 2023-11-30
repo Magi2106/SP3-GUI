@@ -1,134 +1,62 @@
 package com.example.sp3gui;
 
 import javafx.application.Platform;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
+import javafx.scene.Group;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 import javafx.scene.control.TextField;
-
-import java.util.Objects;
 import java.util.ResourceBundle;
 
-
-
-
 public class MainController implements Initializable {
-
-    public Stage userChoices = new Stage();
-
-
+    private FileIO io = new FileIO();
+    private Media media;
+    private User currentUser;
     @FXML
-    ImageView Image1 = new ImageView();
-
+    Stage userChoices = new Stage();
     @FXML
+    private Button loginButton;
+    @FXML
+    private Button registerButton;
+    @FXML
+    private TextField usernameField;
+    @FXML
+    private TextField passwordField;
+    @FXML
+    private TextArea outputArea;
+
     public ListView<String> ListView1 = new ListView<String>();
     public ListView<String> ListView2 = new ListView<String>();
     public ListView<String> ListView3 = new ListView<String>();
 
-
-    private FileIO io = new FileIO();
-    private TextUI ui;
-    private Chill ch;
-    private User currentUser;
-    private TextArea outputArea;
-    private Media media;
-
-
-    //Buttons and textfields to handle login.
-    @FXML
-    private Button loginButton;
-
-
-    @FXML
-    private Button registerButton;
-
-    @FXML
-    private TextField usernameField;
-
-    @FXML
-    private TextField passwordField;
-
-    private List<Media> movies = io.loadMovies();
-    private List<Media> series = io.loadSeries();
-    private List<Media> allMedia = io.loadList();
-
-
-    @FXML
-    private Label myLabel;
-
-   // public ArrayList<String> savedMedia = currentUser.getSavedMedia();
-
-
-
-
-
-    @FXML
-    void loginPressed(ActionEvent event) {
-
-        try {
-            currentUser = io.login(usernameField.getText(), passwordField.getText());
-
-
-            if (currentUser != null) {
-
-
-                Platform.runLater(() -> {
-                    try {
-                        FXMLLoader loader = new FXMLLoader(getClass().getResource("Menu.fxml"));
-                        Parent root = loader.load();
-
-                        // Create new stage to display user choices.
-                        Stage userChoices = new Stage();
-
-                        // Define scene size and show scene.
-                        userChoices.setScene(new Scene(root, 800, 800));
-                        userChoices.show();
-
-                    } catch (IOException e) {
-                        showErrorDialog("Error", "An error occurred while loading the next screen.");
-                    }
-                });
-
-            } else {
-                showErrorDialog("Error", "An error occurred while loading the next screen.");
-            }
-        } catch (FileNotFoundException e) {
-            showErrorDialog("Error", "An unexpected error occured: " + e.getMessage());
-
-        } catch (Exception e) {
-            showErrorDialog("Error", "An unexpected error occured: " + e.getMessage());
-        }
-    }
-
-
-
     @Override
     public void initialize(URL var1, ResourceBundle var2) {
+        loadLists();
 
-        Image image = new Image("file:src/main/java/com/example/sp3gui/ShrekTitle.jpeg");
-        Image1.setImage(image);
+    }
 
-       User u = currentUser;
-        //  String[] moviesArr = {"Godfather", "EtEllerAndet", "OkOk"};
-
+    // Loads ViewLists.
+    private void loadLists() {
+        List<Media> movies = io.loadMovies();
+        List<Media> series = io.loadSeries();
+        List<String> savedMedia;
         ObservableList<String> seriesList = FXCollections.observableArrayList();
         ObservableList<String> movieList = FXCollections.observableArrayList();
         ObservableList<String> savedMedias = FXCollections.observableArrayList();
@@ -144,79 +72,44 @@ public class MainController implements Initializable {
         }
         ListView2.getItems().addAll(seriesList);
 
-        for(String saved : savedMedias) {
+        // TODO: Add user SavedMedia > savedMedias > ListView3
 
-
-
-        }
-
-        }
-
-
-
-
-        /*
-        Movie currentMovie = null;
-
-        ListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-
-            @Override
-            public void changed(ObservableValue<? extends String> arg0, String arg1, String arg2) {
-
-                currentMovie = ListView.getSelectionModel().getSelectedItem();
-
-                myLabel.setText(currentMovie);
-
-            }
-        });
     }
 
-         */
+    // Logs into existing user.
+    @FXML
+    void loginPressed(ActionEvent event) {
 
+        try {
+            currentUser = io.login(usernameField.getText(), passwordField.getText());
 
+            if (currentUser != null) {
+                Platform.runLater(() -> {
 
+                    try {
+                        ((Node)(event.getSource())).getScene().getWindow().hide();
 
+                        FXMLLoader loader = new FXMLLoader(getClass().getResource("Menu.fxml"));
+                        Parent root = loader.load();
+                        userChoices.setScene(new Scene(root, 800, 600));
+                        userChoices.show();
 
-
-/*
-        @FXML
-        void loginPressed(ActionEvent event) {
-            try {
-                currentUser = io.login(usernameField.getText(), passwordField.getText());
-
-
-                if (currentUser != null) {
-
-
-
-                        try {
-                            FXMLLoader loader = new FXMLLoader(getClass().getResource("Menu.fxml"));
-                            Parent root = loader.load();
-
-                            // Create new stage to display user choices.
-
-
-                            // Define scene size and show scene.
-                            userChoices.setScene(new Scene(root, 800, 600));
-                            userChoices.show();
-
-                        } catch (IOException e) {
-                            showErrorDialog("Error", "An error occurred while loading the next screen.");
-                        }
-
-
-                    } else {
-                        showErrorDialog("Error", "An error occurred while loading the next screen.");
+                    } catch (IOException e) {
+                        showErrorDialog("Error1", "An error occurred while loading the next screen.");
                     }
-                } catch (FileNotFoundException e) {
-                    showErrorDialog("Error", "An unexpected error occured: " + e.getMessage());
+                });
 
-                } catch (Exception e) {
-                    showErrorDialog("Error", "An unexpected error occured: " + e.getMessage());
-                }
+            } else {
+                showErrorDialog("Error2", "An error occurred while loading the next screen.");
             }
+        } catch (FileNotFoundException e) {
+            showErrorDialog("Error3", "An unexpected error occured: " + e.getMessage());
 
- */
+        } catch (Exception e) {
+            showErrorDialog("Error4", "An unexpected error occured: " + e.getMessage());
+        }
+    }
+
 
 
     private void showErrorDialog(String title, String content) {
@@ -227,88 +120,39 @@ public class MainController implements Initializable {
         alert.showAndWait();
     }
 
-    // Creates a new user
-    // Loads user with io.login given the information from created user.
+    // Creates a new user.
     @FXML
-    void registerPressed(ActionEvent event) {
+    private void registerPressed(ActionEvent event) {
         try {
             io.createUser(usernameField.getText(), passwordField.getText(), 0);
 
             if (currentUser != null) {
-
 
                 Platform.runLater(() -> {
 
                     try {
                         FXMLLoader loader = new FXMLLoader(getClass().getResource("Menu.fxml"));
                         Parent root = loader.load();
-
-                        // Create new stage to display user choices.
-                        Stage userChoices = new Stage();
-
-                        // Define scene size and show scene.
                         userChoices.setScene(new Scene(root, 800, 600));
                         userChoices.show();
 
-
                     } catch (IOException e) {
-                        showErrorDialog("Error", "An error occurred while loading the next screen.");
+                        showErrorDialog("Error1", "An error occurred while loading the next screen.");
                     }
                 });
 
             } else {
-                showErrorDialog("Error", "An error occurred while loading the next screen.");
+                showErrorDialog("Error2", "An error occurred while loading the next screen.");
             }
         } catch (Exception e) {
-            showErrorDialog("Error", "An unexpected error occured: " + e.getMessage());
+            showErrorDialog("Error3", "An unexpected error occured: " + e.getMessage());
         }
     }
-/*
+
 
     @FXML
-    public void displayMedia() throws IOException {
-
-        for (Media media : movies) {
-            mediaList.add(media.getTitle());
-            System.out.println(media.getTitle());
-        }
-
-
-
-
-    }
-
-
-/*
-    List<Object> searchMedia(List<Object> list, String search) {
-
-        // final List<Object> chooseMedia = type.equals("movie") ? "txt/100bedstefilm.txt" : "txt/100bedsteserier.txt";
-        // type == genre, movie, serier, rating etc.
-        // parse og returner fitting list
-        // switch case ?
-
-
-        return list;
-    }
-*/
-
-    // Search for movie or series.
-
-    @FXML
-    public void handleButton1(ActionEvent e) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("MediaView.fxml"));
-        Parent root = loader.load();
-
-        // Create new stage to display user choices.
-        Stage userChoices = new Stage();
-
-        // Define scene size and show scene.
-        userChoices.setScene(new Scene(root, 800, 600));
-        userChoices.show();
-
-    }
-
-    public void LogOutButton(ActionEvent actionEvent) {
+    private void LogOutButton(ActionEvent event) throws FileNotFoundException {
+        ((Node)(event.getSource())).getScene().getWindow().hide();
 
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
@@ -317,32 +161,41 @@ public class MainController implements Initializable {
             userChoices.setScene(new Scene(root, 800, 600));
             userChoices.show();
 
-
         } catch (IOException e) {
             showErrorDialog("Logout", "Logged out");
         }
+        gigaShrek();
     }
 
-    }
+public void gigaShrek() throws FileNotFoundException {
+
+    FileInputStream input = new FileInputStream("shrek.png");
+    Image image = new Image(input);
+    ImageView i = new ImageView(image);
+
+    FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Login.fxml"));
+
+    Pane background = new Pane();
+    Pane root = new Pane();
+    Group group = new Group();
+
+    background.getChildren().add(i);
+    group.getChildren().add(i);
+    group.getChildren().add(root);
+    Scene scene = new Scene(group);
+
+    userChoices.setScene(scene);
+    userChoices.show();
+
+    //return scene;
+}
 
 
-
-
-
-
-
-
+}
 
 
 
 /*
-    String currentMovie;
-
-    @Override
-    public void initialize(URL arg0, ResourceBundle arg1) {
-
-
-        ListView.getItems().addAll(moviesArr);
 
         ListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
 
@@ -351,11 +204,5 @@ public class MainController implements Initializable {
 
                 currentMovie = ListView.getSelectionModel().getSelectedItem();
 
-                myLabel.setText(currentMovie);
-
-            }
-        });
-    }
-}
 
 */
