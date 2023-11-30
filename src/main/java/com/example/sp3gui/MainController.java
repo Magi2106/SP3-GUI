@@ -29,6 +29,9 @@ public class MainController implements Initializable {
     private FileIO io = new FileIO();
     private Media media;
     private User currentUser;
+
+    @FXML
+    ImageView Image1 = new ImageView();
     @FXML
     Stage userChoices = new Stage();
     @FXML
@@ -48,6 +51,9 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL var1, ResourceBundle var2) {
+        Image image = new Image("file:src/main/java/com/example/sp3gui/ShrekTitle.jpeg");
+        Image1.setImage(image);
+
         loadLists();
 
     }
@@ -164,9 +170,10 @@ public class MainController implements Initializable {
         } catch (IOException e) {
             showErrorDialog("Logout", "Logged out");
         }
-        gigaShrek();
+
     }
 
+/*
 public void gigaShrek() throws FileNotFoundException {
 
     FileInputStream input = new FileInputStream("shrek.png");
@@ -188,7 +195,8 @@ public void gigaShrek() throws FileNotFoundException {
     userChoices.show();
 
     //return scene;
-}
+}  */
+
 
 
 }
