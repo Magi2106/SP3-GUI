@@ -7,11 +7,17 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
+import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
@@ -20,7 +26,7 @@ import javafx.scene.control.TextField;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
-    private FileIO io;
+    private FileIO io = new FileIO();
     private Media media;
     private User currentUser;
     @FXML
@@ -145,7 +151,7 @@ public class MainController implements Initializable {
 
 
     @FXML
-    private void LogOutButton(ActionEvent event) {
+    private void LogOutButton(ActionEvent event) throws FileNotFoundException {
         ((Node)(event.getSource())).getScene().getWindow().hide();
 
         try {
@@ -158,7 +164,33 @@ public class MainController implements Initializable {
         } catch (IOException e) {
             showErrorDialog("Logout", "Logged out");
         }
+        gigaShrek();
     }
+
+public void gigaShrek() throws FileNotFoundException {
+
+    FileInputStream input = new FileInputStream("shrek.png");
+    Image image = new Image(input);
+    ImageView i = new ImageView(image);
+
+    FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Login.fxml"));
+
+    Pane background = new Pane();
+    Pane root = new Pane();
+    Group group = new Group();
+
+    background.getChildren().add(i);
+    group.getChildren().add(i);
+    group.getChildren().add(root);
+    Scene scene = new Scene(group);
+
+    userChoices.setScene(scene);
+    userChoices.show();
+
+    //return scene;
+}
+
+
 }
 
 
