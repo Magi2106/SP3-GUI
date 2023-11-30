@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="Good shit">
+    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/userSave.txt" beforeDir="false" afterPath="$PROJECT_DIR$/txt/userSave.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/ShrekTitle.png" beforeDir="false" afterPath="$PROJECT_DIR$/ShrekTitle.png" afterDir="false" />
     </list>
-    <list id="270f0e78-1154-4639-8c1a-ad1fb0b01d14" name="Changes by magnus" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" afterDir="false" />
-    </list>
+    <list id="270f0e78-1154-4639-8c1a-ad1fb0b01d14" name="Changes by magnus" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,21 +42,8 @@
       </UrlAndAccount>
     </option>
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java">
-      <ranges>
-        <range start1="15" end1="15" start2="15" end2="17" changelist="270f0e78-1154-4639-8c1a-ad1fb0b01d14" />
-        <range start1="17" end1="17" start2="19" end2="20" changelist="270f0e78-1154-4639-8c1a-ad1fb0b01d14" />
-        <range start1="23" end1="23" start2="26" end2="28" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="38" end1="38" start2="43" end2="44" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="50" end1="50" start2="56" end2="59" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="93" end1="94" start2="102" end2="103" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="141" end1="141" start2="150" end2="151" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="163" end1="164" start2="173" end2="174" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="267" end1="267" start2="277" end2="279" changelist="270f0e78-1154-4639-8c1a-ad1fb0b01d14" />
-        <range start1="312" end1="313" start2="324" end2="331" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-      </ranges>
-    </file>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -78,6 +63,7 @@
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/magnus/Documents/GitHub/SP3GUI/txt&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -89,7 +75,11 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.sp3gui" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/txt" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\Gustav\Desktop\temp\SP3-master\SP3-GUI\src\main\java\com\example\sp3gui" />
     </key>
   </component>
@@ -109,6 +99,7 @@
       <workItem from="1701337914243" duration="3740000" />
       <workItem from="1701342719960" duration="10688000" />
       <workItem from="1701360264045" duration="9907000" />
+      <workItem from="1701371176225" duration="1899000" />
     </task>
     <task id="LOCAL-00001" summary="Good shit">
       <option name="closed" value="true" />
@@ -118,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701360049744</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="txt">
+      <option name="closed" value="true" />
+      <created>1701371038186</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701371038187</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +136,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Good shit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Good shit" />
+    <MESSAGE value="txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

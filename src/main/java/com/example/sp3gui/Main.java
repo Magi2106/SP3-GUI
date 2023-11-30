@@ -60,7 +60,8 @@ public class Main extends Application {
 // 3. Save metoder til user watched/saved media.
 
     public void start(Stage primaryStage) throws IOException {
-        // Load the FXML file for the login screen
+
+// Load the FXML file for the login screen
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Login.fxml"));
         // Create the root node as Pane by loading the FXML
         Pane root = fxmlLoader.load();
@@ -68,6 +69,9 @@ public class Main extends Application {
         primaryStage.setTitle("ShrekFlix.exe");
         primaryStage.setScene(scene);
         primaryStage.show();
+
+
+
 
 
 

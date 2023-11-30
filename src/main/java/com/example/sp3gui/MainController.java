@@ -13,6 +13,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -34,6 +35,8 @@ public class MainController implements Initializable {
     public Stage userChoices = new Stage();
 
 
+    @FXML
+    ImageView Image1 = new ImageView();
 
     @FXML
     public ListView<String> ListView1 = new ListView<String>();
@@ -53,8 +56,6 @@ public class MainController implements Initializable {
     @FXML
     private Button loginButton;
 
-    @FXML
-    private ImageView Image1;
 
     @FXML
     private Button registerButton;
@@ -121,6 +122,9 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL var1, ResourceBundle var2) {
+
+        Image image = new Image("file:src/main/java/com/example/sp3gui/ShrekTitle.jpeg");
+        Image1.setImage(image);
 
        User u = currentUser;
         //  String[] moviesArr = {"Godfather", "EtEllerAndet", "OkOk"};
