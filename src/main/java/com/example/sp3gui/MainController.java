@@ -21,6 +21,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import javafx.scene.control.TextField;
+
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 
@@ -37,6 +39,7 @@ public class MainController implements Initializable {
     public ListView<String> ListView2 = new ListView<String>();
     public ListView<String> ListView3 = new ListView<String>();
 
+
     private FileIO io = new FileIO();
     private TextUI ui;
     private Chill ch;
@@ -48,6 +51,9 @@ public class MainController implements Initializable {
     //Buttons and textfields to handle login.
     @FXML
     private Button loginButton;
+
+    @FXML
+    private ImageView Image1;
 
     @FXML
     private Button registerButton;
@@ -91,7 +97,7 @@ public class MainController implements Initializable {
                         Stage userChoices = new Stage();
 
                         // Define scene size and show scene.
-                        userChoices.setScene(new Scene(root, 800, 600));
+                        userChoices.setScene(new Scene(root, 800, 800));
                         userChoices.show();
 
                     } catch (IOException e) {
@@ -139,6 +145,7 @@ public class MainController implements Initializable {
 
         }
 
+        }
 
 
 
@@ -161,7 +168,7 @@ public class MainController implements Initializable {
 
          */
 
-    }
+
 
 
 
@@ -310,7 +317,13 @@ public class MainController implements Initializable {
             showErrorDialog("Logout", "Logged out");
         }
     }
-}
+
+    }
+
+
+
+
+
 
 
 

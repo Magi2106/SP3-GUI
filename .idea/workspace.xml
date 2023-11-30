@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="">
+    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="Good shit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Shrek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Shrek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Chill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Chill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/FileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/FileIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/IO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/IO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Series.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Series.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/MediaView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Menu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/txt/userSave.txt" beforeDir="false" afterPath="$PROJECT_DIR$/txt/userSave.txt" afterDir="false" />
     </list>
     <list id="270f0e78-1154-4639-8c1a-ad1fb0b01d14" name="Changes by magnus" comment="">
@@ -41,30 +30,33 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Magi2106&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="bc4053c7-d313-44eb-8c69-8fe26d269af9" />
+        <option name="url" value="https://github.com/Magi2106/SP3-GUI.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java">
       <ranges>
-        <range start1="2" end1="3" start2="2" end2="13" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="5" end1="6" start2="15" end2="15" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="7" end1="8" start2="16" end2="16" changelist="270f0e78-1154-4639-8c1a-ad1fb0b01d14" />
-        <range start1="10" end1="10" start2="18" end2="20" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="11" end1="11" start2="21" end2="26" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="12" end1="13" start2="27" end2="28" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="14" end1="15" start2="29" end2="39" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="19" end1="19" start2="43" end2="69" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="20" end1="25" start2="70" end2="76" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="26" end1="27" start2="77" end2="103" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="28" end1="29" start2="104" end2="108" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="30" end1="30" start2="109" end2="115" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="31" end1="35" start2="116" end2="118" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="36" end1="38" start2="119" end2="122" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="39" end1="40" start2="123" end2="127" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="41" end1="45" start2="128" end2="251" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="46" end1="46" start2="252" end2="253" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="47" end1="52" start2="254" end2="260" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="53" end1="53" start2="261" end2="265" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
-        <range start1="54" end1="54" start2="266" end2="268" changelist="270f0e78-1154-4639-8c1a-ad1fb0b01d14" />
-        <range start1="56" end1="57" start2="270" end2="344" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
+        <range start1="15" end1="15" start2="15" end2="17" changelist="270f0e78-1154-4639-8c1a-ad1fb0b01d14" />
+        <range start1="17" end1="17" start2="19" end2="20" changelist="270f0e78-1154-4639-8c1a-ad1fb0b01d14" />
+        <range start1="23" end1="23" start2="26" end2="28" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
+        <range start1="38" end1="38" start2="43" end2="44" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
+        <range start1="50" end1="50" start2="56" end2="59" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
+        <range start1="93" end1="94" start2="102" end2="103" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
+        <range start1="141" end1="141" start2="150" end2="151" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
+        <range start1="163" end1="164" start2="173" end2="174" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
+        <range start1="267" end1="267" start2="277" end2="279" changelist="270f0e78-1154-4639-8c1a-ad1fb0b01d14" />
+        <range start1="312" end1="313" start2="324" end2="331" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
       </ranges>
     </file>
   </component>
@@ -97,6 +89,9 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.sp3gui" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gustav\Desktop\temp\SP3-master\SP3-GUI\src\main\java\com\example\sp3gui" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -112,8 +107,18 @@
       <workItem from="1700842071495" duration="1098000" />
       <workItem from="1700848403113" duration="494000" />
       <workItem from="1701337914243" duration="3740000" />
-      <workItem from="1701342719960" duration="10264000" />
+      <workItem from="1701342719960" duration="10688000" />
+      <workItem from="1701360264045" duration="9907000" />
     </task>
+    <task id="LOCAL-00001" summary="Good shit">
+      <option name="closed" value="true" />
+      <created>1701360049744</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701360049744</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +134,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Good shit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Good shit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
