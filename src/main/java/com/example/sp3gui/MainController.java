@@ -23,15 +23,11 @@ import java.util.ResourceBundle;
 
 
 public class MainController implements Initializable {
-    @FXML
-    Stage userChoices = new Stage();
-
     private FileIO io;
     private Media media;
     private User currentUser;
-
-
-
+    @FXML
+    Stage userChoices = new Stage();
     @FXML
     private Button loginButton;
     @FXML
@@ -42,12 +38,9 @@ public class MainController implements Initializable {
     private TextField passwordField;
     @FXML
     private TextArea outputArea;
-
-
     public ListView<String> ListView1 = new ListView<String>();
     public ListView<String> ListView2 = new ListView<String>();
     public ListView<String> ListView3 = new ListView<String>();
-
 
     @Override
     public void initialize(URL var1, ResourceBundle var2) {
@@ -55,17 +48,14 @@ public class MainController implements Initializable {
 
     }
 
-
     // Loads ViewLists.
     private void loadLists() {
-
         List<Media> movies = io.loadMovies();
         List<Media> series = io.loadSeries();
+        List<String> savedMedia;
         ObservableList<String> seriesList = FXCollections.observableArrayList();
         ObservableList<String> movieList = FXCollections.observableArrayList();
         ObservableList<String> savedMedias = FXCollections.observableArrayList();
-
-        List<String> savedMedia;
 
         for (Media movie : movies) {
             movieList.add(movie.getTitle());
@@ -76,15 +66,11 @@ public class MainController implements Initializable {
         for (Media serie : series) {
             seriesList.add(serie.getTitle());
         }
-
         ListView2.getItems().addAll(seriesList);
 
-
-
+        // TODO: Add user SavedMedia > savedMedias > ListView3
 
     }
-
-
 
     @FXML
     void loginPressed(ActionEvent event) {
@@ -100,26 +86,22 @@ public class MainController implements Initializable {
 
                         FXMLLoader loader = new FXMLLoader(getClass().getResource("Menu.fxml"));
                         Parent root = loader.load();
-
-                        // Create new stage to display user choices.
-
-                        // Define scene size and show scene.
                         userChoices.setScene(new Scene(root, 800, 600));
                         userChoices.show();
 
                     } catch (IOException e) {
-                        showErrorDialog("Error", "An error occurred while loading the next screen.");
+                        showErrorDialog("Error1", "An error occurred while loading the next screen.");
                     }
                 });
 
             } else {
-                showErrorDialog("Error", "An error occurred while loading the next screen.");
+                showErrorDialog("Error2", "An error occurred while loading the next screen.");
             }
         } catch (FileNotFoundException e) {
-            showErrorDialog("Error", "An unexpected error occured: " + e.getMessage());
+            showErrorDialog("Error3", "An unexpected error occured: " + e.getMessage());
 
         } catch (Exception e) {
-            showErrorDialog("Error", "An unexpected error occured: " + e.getMessage());
+            showErrorDialog("Error4", "An unexpected error occured: " + e.getMessage());
         }
     }
 
@@ -147,24 +129,20 @@ public class MainController implements Initializable {
                     try {
                         FXMLLoader loader = new FXMLLoader(getClass().getResource("Menu.fxml"));
                         Parent root = loader.load();
-
-                        // Create new stage to display user choices.
-
-                        // Define scene size and show scene.
                         userChoices.setScene(new Scene(root, 800, 600));
                         userChoices.show();
 
 
                     } catch (IOException e) {
-                        showErrorDialog("Error", "An error occurred while loading the next screen.");
+                        showErrorDialog("Error1", "An error occurred while loading the next screen.");
                     }
                 });
 
             } else {
-                showErrorDialog("Error", "An error occurred while loading the next screen.");
+                showErrorDialog("Error2", "An error occurred while loading the next screen.");
             }
         } catch (Exception e) {
-            showErrorDialog("Error", "An unexpected error occured: " + e.getMessage());
+            showErrorDialog("Error3", "An unexpected error occured: " + e.getMessage());
         }
     }
 
@@ -174,13 +152,11 @@ public class MainController implements Initializable {
         ((Node)(event.getSource())).getScene().getWindow().hide();
 
         try {
-
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
             Parent root = loader.load();
 
             userChoices.setScene(new Scene(root, 800, 600));
             userChoices.show();
-
 
         } catch (IOException e) {
             showErrorDialog("Logout", "Logged out");
