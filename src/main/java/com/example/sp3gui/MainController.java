@@ -26,44 +26,46 @@ public class MainController implements Initializable {
     @FXML
     Stage userChoices = new Stage();
 
-
-    private FileIO io = new FileIO();
-    private TextUI ui;
-    private Chill ch;
-    private User currentUser;
-    private TextArea outputArea;
+    private FileIO io;
     private Media media;
+    private User currentUser;
 
 
-    //Buttons and textfields to handle login.
+
     @FXML
     private Button loginButton;
     @FXML
     private Button registerButton;
-
     @FXML
     private TextField usernameField;
-
     @FXML
     private TextField passwordField;
-
+    @FXML
+    private TextArea outputArea;
 
 
     public ListView<String> ListView1 = new ListView<String>();
     public ListView<String> ListView2 = new ListView<String>();
     public ListView<String> ListView3 = new ListView<String>();
-    private List<Media> movies = io.loadMovies();
-    private List<Media> series = io.loadSeries();
-    public List<String> savedMedia;
-
 
 
     @Override
     public void initialize(URL var1, ResourceBundle var2) {
+        loadLists();
 
+    }
+
+
+    // Loads ViewLists.
+    private void loadLists() {
+
+        List<Media> movies = io.loadMovies();
+        List<Media> series = io.loadSeries();
         ObservableList<String> seriesList = FXCollections.observableArrayList();
         ObservableList<String> movieList = FXCollections.observableArrayList();
         ObservableList<String> savedMedias = FXCollections.observableArrayList();
+
+        List<String> savedMedia;
 
         for (Media movie : movies) {
             movieList.add(movie.getTitle());
@@ -77,7 +79,12 @@ public class MainController implements Initializable {
 
         ListView2.getItems().addAll(seriesList);
 
+
+
+
     }
+
+
 
     @FXML
     void loginPressed(ActionEvent event) {
@@ -95,7 +102,6 @@ public class MainController implements Initializable {
                         Parent root = loader.load();
 
                         // Create new stage to display user choices.
-                        Stage userChoices = new Stage();
 
                         // Define scene size and show scene.
                         userChoices.setScene(new Scene(root, 800, 600));
@@ -185,13 +191,6 @@ public class MainController implements Initializable {
 
 
 /*
-    String currentMovie;
-
-    @Override
-    public void initialize(URL arg0, ResourceBundle arg1) {
-
-
-        ListView.getItems().addAll(moviesArr);
 
         ListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
 
@@ -200,11 +199,5 @@ public class MainController implements Initializable {
 
                 currentMovie = ListView.getSelectionModel().getSelectedItem();
 
-                myLabel.setText(currentMovie);
-
-            }
-        });
-    }
-}
 
 */
