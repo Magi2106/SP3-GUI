@@ -5,20 +5,24 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sp3gui.MainController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-   <children>
+<AnchorPane prefHeight="546.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sp3gui.MainController">
+    <children>
+        <VBox alignment="CENTER" layoutX="237.0" layoutY="78.0" prefHeight="390.0" prefWidth="252.0" spacing="20.0" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="237.0" AnchorPane.rightAnchor="237.0" AnchorPane.topAnchor="78.0">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+            <children>
 
-       <Label fx:id="welcomeText" text="Shrekflix">
-         <font>
-            <Font size="21.0" />
-         </font></Label>
-      <TextField />
-      <PasswordField />
-      <Button mnemonicParsing="false" text="Login" />
-      <Button mnemonicParsing="false" text="Sign up!" />
-
-   </children>
-</VBox>
+                <Label fx:id="welcomeText" text="ShrekFlix">
+                    <font>
+                        <Font name="Comic Sans MS" size="36.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="usernameField" />
+                <PasswordField fx:id="passwordField" prefHeight="25.0" prefWidth="602.0" />
+                <Button fx:id="loginButton" onAction="#loginPressed" prefHeight="25.0" prefWidth="61.0" text="Login" />
+                <Button fx:id="signupbutton" onAction="#registerPressed" text="Register!" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
