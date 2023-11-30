@@ -8,7 +8,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Main extends Application {
-    MainController main = new MainController();
 
 
     public static void main(String[] args) {
