@@ -30,8 +30,6 @@ import java.util.ResourceBundle;
 public class MainController implements Initializable {
     @FXML
     Stage userChoices = new Stage();
-    @FXML
-    private TextArea outputArea;
     private FileIO io = new FileIO();
     private Media media;
     @FXML
@@ -40,7 +38,7 @@ public class MainController implements Initializable {
     public ListView<String> ListView2 = new ListView<String>();
     @FXML
     public ListView<String> ListView3 = new ListView<String>();
-    User currentUser = LoginController.currentUser;
+
 
 
     @Override
@@ -67,6 +65,7 @@ public class MainController implements Initializable {
 
     // Loads ViewLists.
     private void loadLists() {
+        User currentUser = LoginController.currentUser;
         List<Media> movies = io.loadMovies();
         List<Media> series = io.loadSeries();
 
@@ -98,6 +97,7 @@ public class MainController implements Initializable {
     }
 
     private void addSavedMedia(String movie) throws IOException {
+        User currentUser = LoginController.currentUser;
 
         if (currentUser != null) {
             currentUser.watchedMedia.add(movie);
@@ -175,24 +175,13 @@ public class MainController implements Initializable {
 
                 System.out.println(currentMovie);
 
-
             }
         });
 
     }
 
+    public void WatchButton(ActionEvent event) {
+
+    }
 }
 
-
-
-/*
-
-        ListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-
-            @Override
-            public void changed(ObservableValue<? extends String> arg0, String arg1, String arg2) {
-
-                currentMovie = ListView.getSelectionModel().getSelectedItem();
-
-
-*/

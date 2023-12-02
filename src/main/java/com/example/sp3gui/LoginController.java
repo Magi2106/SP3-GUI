@@ -42,7 +42,7 @@ public class LoginController implements Initializable {
 
     @Override
     public void initialize(URL var1, ResourceBundle var2) {
-        Image image = new Image("file:src/main/java/com/example/sp3gui/ShrekTitle.jpeg");
+        Image image = new Image("file:Media/ShrekTitle.png");
         Image1.setImage(image);  // Shrek background
 
     }
