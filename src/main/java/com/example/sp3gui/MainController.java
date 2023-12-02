@@ -26,7 +26,6 @@ import javafx.scene.control.TextField;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
-
     @FXML
     Stage userChoices = new Stage();
     @FXML
@@ -39,7 +38,8 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL var1, ResourceBundle var2) {
-        loadLists();
+        User currentUser = LoginController.currentUser;
+        loadLists(currentUser);
 
         // TODO: Fix user SavedMedia list.
         // Possible solutions:
@@ -67,17 +67,19 @@ public class MainController implements Initializable {
     }
 
     // Loads ViewLists.
-    private void loadLists() {
+    private void loadLists(User u) {
         List<Media> movies = io.loadMovies();
         List<Media> series = io.loadSeries();
-        List<String> savedMedia;
+
         ObservableList<String> seriesList = FXCollections.observableArrayList();
         ObservableList<String> movieList = FXCollections.observableArrayList();
         ObservableList<String> savedMedias = FXCollections.observableArrayList();
 
+
         for (Media movie : movies) {
-            movieList.add(movie.getTitle());
+            movieList.addAll(movie.getTitle());
         }
+
         ListView1.getItems().addAll(movieList);
 
         for (Media serie : series) {
@@ -85,12 +87,14 @@ public class MainController implements Initializable {
         }
         ListView2.getItems().addAll(seriesList);
 
+        if (u != null) {
+            List<String> savedMedia =  u.getSavedMedia();
+                ListView3.getItems().addAll(savedMedia);
+            }
+
     }
 
-    // Logs into existing user.
-
-
-
+   // Logs out of user and returns to Login screen.
     @FXML
     private void LogOutButton(ActionEvent event) throws FileNotFoundException {
         ((Node)(event.getSource())).getScene().getWindow().hide();
