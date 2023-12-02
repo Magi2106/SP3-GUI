@@ -16,7 +16,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Login.fxml"));
         Pane root = fxmlLoader.load();
-        Scene scene = new Scene(root, 726, 546);
+        Scene scene = new Scene(root);
         primaryStage.setTitle("ShrekFlix.exe");
         primaryStage.setScene(scene);
         primaryStage.show();

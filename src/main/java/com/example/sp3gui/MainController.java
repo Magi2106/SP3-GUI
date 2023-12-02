@@ -43,8 +43,7 @@ public class MainController implements Initializable {
     public void initialize(URL var1, ResourceBundle var2) {
         loadLists();
 
-        // Skal ikke lukke menu window.
-        // Skal loade mediaplayer
+
         // TODO: Add search method.
         // TODO: Merge med SP3 database.
 
@@ -108,7 +107,9 @@ public class MainController implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
             Parent root = loader.load();
 
-            userChoices.setScene(new Scene(root, 600, 400));
+
+
+            userChoices.setScene(new Scene(root));
             userChoices.show();
 
         } catch (IOException e) {
@@ -133,7 +134,7 @@ public class MainController implements Initializable {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("MediaPlayer.fxml"));
             Parent root = loader.load();
-            userChoices.setScene(new Scene(root, 600, 400));
+            userChoices.setScene(new Scene(root));
             userChoices.show();
 
         } catch (IOException e) {

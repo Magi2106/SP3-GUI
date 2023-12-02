@@ -59,7 +59,7 @@ public class LoginController implements Initializable {
                         ((Node)(event.getSource())).getScene().getWindow().hide();
                         FXMLLoader loader = new FXMLLoader(getClass().getResource("Menu.fxml"));
                         Parent root = loader.load();
-                        userChoices.setScene(new Scene(root, 600, 400));
+                        userChoices.setScene(new Scene(root));;
                         userChoices.show();
 
                     } catch (IOException e) {
@@ -99,7 +99,7 @@ public class LoginController implements Initializable {
                     try {
                         FXMLLoader loader = new FXMLLoader(getClass().getResource("Menu.fxml"));
                         Parent root = loader.load();
-                        userChoices.setScene(new Scene(root, 600, 400));
+                        userChoices.setScene(new Scene(root));
                         userChoices.show();
 
                     } catch (IOException e) {
