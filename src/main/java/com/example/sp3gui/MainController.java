@@ -35,28 +35,24 @@ public class MainController implements Initializable {
     public ListView<String> ListView1 = new ListView<String>();
     public ListView<String> ListView2 = new ListView<String>();
     public ListView<String> ListView3 = new ListView<String>();
-
+    User currentUser = LoginController.currentUser;
     @Override
     public void initialize(URL var1, ResourceBundle var2) {
-        User currentUser = LoginController.currentUser;
-        loadLists(currentUser);
-
-        // TODO: Fix user SavedMedia list.
-        // Possible solutions:
-        // Check if declared within initialize() works.
-        // Check if splitting MainController into Login and MainController class.
-        // TODO: Add method to save userMedia to FileIO with the currentUser object.
-        // Get user from io.login, is it necessary to split apart classes? Other solutions?
-        // Remember to call the method within ActionEvent methods, for automatic saving.
-        // TODO: Add search method.
-        // TODO: Clean up variable access identifiers (public/private).
-        // TODO: Add poster art as user interactable buttons?
-        // Use for loop and media.GetTitle.equals(poster.jpeg) to get title
-        // Add buttons with for loop with a predefined button added x(movies or series) times.
-        // Separate method for searching movieLists. Pass Lists into method and return new one. Redefine loadLists? Overload?
-        // Refresh on every search. Call search within ActionEvent method(s) or create independent search field method?
-
+        loadLists();
     }
+
+    // TODO: Add method to save userMedia to FileIO with the currentUser object.
+    // TODO: Make Media Buttons interactible.
+    // Get user from io.login, is it necessary to split apart classes? Other solutions?
+    // Remember to call the method within ActionEvent methods, for automatic saving.
+    // TODO: Add search method.
+    // TODO: Clean up variable access identifiers (public/private).
+    // TODO: Add poster art as user interactable buttons?
+    // Use for loop and media.GetTitle.equals(poster.jpeg) to get title
+    // Add buttons with for loop with a predefined button added x(movies or series) times.
+    // Separate method for searching movieLists. Pass Lists into method and return new one. Redefine loadLists? Overload?
+    // Refresh on every search. Call search within ActionEvent method(s) or create independent search field method?
+
 
     private void showErrorDialog(String title, String content) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -67,7 +63,7 @@ public class MainController implements Initializable {
     }
 
     // Loads ViewLists.
-    private void loadLists(User u) {
+    private void loadLists() {
         List<Media> movies = io.loadMovies();
         List<Media> series = io.loadSeries();
 
@@ -87,10 +83,22 @@ public class MainController implements Initializable {
         }
         ListView2.getItems().addAll(seriesList);
 
-        if (u != null) {
-            List<String> savedMedia =  u.getSavedMedia();
+        if (currentUser != null) {
+            List<String> savedMedia =  currentUser.getSavedMedia();
                 ListView3.getItems().addAll(savedMedia);
             }
+    }
+
+    private void SearchMedia(List<Object> list, String Search) {
+        // https://stackoverflow.com/questions/28448851/how-to-use-javafx-filteredlist-in-a-listview
+
+    }
+
+    private void addSavedMedia(ActionEvent event) throws IOException {
+
+        if (currentUser != null) {
+            io.saveMediaList(currentUser);
+        }
 
     }
 
@@ -109,7 +117,6 @@ public class MainController implements Initializable {
         } catch (IOException e) {
             showErrorDialog("Logout", "Logged out");
         }
-
     }
 }
 
