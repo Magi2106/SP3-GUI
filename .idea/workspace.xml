@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="Merge 'magnus' into master">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MediaPlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MediaPlayerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Menu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/userSave.txt" beforeDir="false" afterPath="$PROJECT_DIR$/txt/userSave.txt" afterDir="false" />
-    </list>
+    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="Merge 'magnus' into master" />
     <list id="270f0e78-1154-4639-8c1a-ad1fb0b01d14" name="Changes by magnus" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +79,7 @@
       <recent name="$PROJECT_DIR$/txt" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Media" />
       <recent name="C:\Users\Gustav\Desktop\temp\SP3-master\SP3-GUI\src\main\java\com\example\sp3gui" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -218,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701536206707</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Merge 'magnus' into master">
+      <option name="closed" value="true" />
+      <created>1701539469469</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1701539469469</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

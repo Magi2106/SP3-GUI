@@ -45,13 +45,12 @@ public class MainController implements Initializable {
     public void initialize(URL var1, ResourceBundle var2) {
         loadLists();
 
-        // TODO: Watch funktion.
+
         // TODO: Randomizer & watchShrek buttons.
         // Skal ikke lukke menu window.
         // Skal loade mediaplayer
-
-        // TODO: Fix save media button.
         // TODO: Add search method.
+        // TODO: Merge med SP3 database.
 
     }
 
@@ -133,67 +132,6 @@ public class MainController implements Initializable {
             }
         }
     }
-
-        /*
-
-        ListView1.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-            String currentMovie;
-            @Override
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                currentMovie = ListView1.getSelectionModel().getSelectedItem();
-
-                System.out.println(currentMovie);
-                try {
-                    addSavedMedia(currentMovie);
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-
-
-            }
-        });
-
-        ListView2.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-            String currentMovie;
-            @Override
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                currentMovie = ListView2.getSelectionModel().getSelectedItem();
-
-                try {
-                    addSavedMedia(currentMovie);
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-
-                System.out.println(currentMovie);
-
-
-            }
-        });
-
-        ListView3.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-
-
-
-            String currentMovie;
-            @Override
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                currentMovie = ListView3.getSelectionModel().getSelectedItem();
-
-                try {
-                    addSavedMedia(currentMovie);
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-
-                System.out.println(currentMovie);
-
-            }
-        });
-
-    }
-
-         */
 
     public void WatchButton(ActionEvent event) {
         try {
