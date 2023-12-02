@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="Giga shrek is alive v2">
+    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="Clean up">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml" afterDir="false" />
     </list>
     <list id="270f0e78-1154-4639-8c1a-ad1fb0b01d14" name="Changes by magnus" comment="" />
@@ -16,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -132,7 +135,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701373838353</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Giga shrek is alive v2">
+      <option name="closed" value="true" />
+      <created>1701475794616</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701475794616</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Clean up">
+      <option name="closed" value="true" />
+      <created>1701475836784</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701475836784</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +172,8 @@
     <MESSAGE value="Good shit" />
     <MESSAGE value="txt" />
     <MESSAGE value="Giga shrek is alive v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Giga shrek is alive v2" />
+    <MESSAGE value="Clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
