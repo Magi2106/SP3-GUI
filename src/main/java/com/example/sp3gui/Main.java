@@ -14,10 +14,9 @@ public class Main extends Application {
     }
 
     public void start(Stage primaryStage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("MediaPlayer.fxml"));
-        // Create the root node as Pane by loading the FXML
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Login.fxml"));
         Pane root = fxmlLoader.load();
-        Scene scene = new Scene(root, 726, 546); // Adjust the size to match the FXML's prefHeight and prefWidth
+        Scene scene = new Scene(root, 726, 546);
         primaryStage.setTitle("ShrekFlix.exe");
         primaryStage.setScene(scene);
         primaryStage.show();

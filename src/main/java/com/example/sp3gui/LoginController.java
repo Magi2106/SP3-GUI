@@ -23,21 +23,20 @@ import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
 
-
     @FXML
     ImageView Image1 = new ImageView();
     @FXML
     Stage userChoices = new Stage();
-    private FileIO io = new FileIO();
+    FileIO io = new FileIO();
     public static User currentUser;
     @FXML
     private Button loginButton;
     @FXML
     private Button registerButton;
     @FXML
-    private TextField usernameField;
+   public TextField usernameField;
     @FXML
-    private TextField passwordField;
+    public TextField passwordField;
     @FXML
     private TextArea outputArea;
 

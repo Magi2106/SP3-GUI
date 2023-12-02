@@ -47,23 +47,15 @@ public class MainController implements Initializable {
     public void initialize(URL var1, ResourceBundle var2) {
         loadLists();
 
+        // TODO: Watch funktion.
+        // TODO: Randomizer & watchShrek buttons.
+        // Skal ikke lukke menu window.
+        // Skal loade mediaplayer
+
+        // TODO: Fix save media button.
+        // TODO: Add search method.
+
     }
-
-
-
-
-
-
-    // TODO: Make Media Buttons interactible.
-    // TODO: Add method to save userMedia to FileIO with the currentUser object.
-    // TODO: Add search method.
-    // TODO: Clean up variable access identifiers (public/private).
-    // TODO: Add poster art as user interactable buttons?
-    // Use for loop and media.GetTitle.equals(poster.jpeg) to get title
-    // Add buttons with for loop with a predefined button added x(movies or series) times.
-    // Separate method for searching movieLists. Pass Lists into method and return new one. Redefine loadLists? Overload?
-    // Refresh on every search. Call search within ActionEvent method(s) or create independent search field method?
-
 
     private void showErrorDialog(String title, String content) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -108,6 +100,7 @@ public class MainController implements Initializable {
     private void addSavedMedia(String movie) throws IOException {
 
         if (currentUser != null) {
+            currentUser.watchedMedia.add(movie);
             io.saveMediaList(currentUser);
         }
 
@@ -128,11 +121,10 @@ public class MainController implements Initializable {
         } catch (IOException e) {
             showErrorDialog("Logout", "Logged out");
         }
-        //ss
     }
+
     @FXML
     private void saveMedia(ActionEvent event) {
-
 
         ListView1.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
             String currentMovie;
@@ -141,7 +133,11 @@ public class MainController implements Initializable {
                 currentMovie = ListView1.getSelectionModel().getSelectedItem();
 
                 System.out.println(currentMovie);
-                //addSavedMedia(currentMovie);
+                try {
+                    addSavedMedia(currentMovie);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
 
 
             }
@@ -151,7 +147,13 @@ public class MainController implements Initializable {
             String currentMovie;
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                currentMovie = ListView1.getSelectionModel().getSelectedItem();
+                currentMovie = ListView2.getSelectionModel().getSelectedItem();
+
+                try {
+                    addSavedMedia(currentMovie);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
 
                 System.out.println(currentMovie);
 
@@ -163,7 +165,13 @@ public class MainController implements Initializable {
             String currentMovie;
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                currentMovie = ListView1.getSelectionModel().getSelectedItem();
+                currentMovie = ListView3.getSelectionModel().getSelectedItem();
+
+                try {
+                    addSavedMedia(currentMovie);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
 
                 System.out.println(currentMovie);
 
