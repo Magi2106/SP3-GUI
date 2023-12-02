@@ -17,7 +17,7 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Login.fxml"));
         // Create the root node as Pane by loading the FXML
         Pane root = fxmlLoader.load();
-        Scene scene = new Scene(root, 800, 800); // Adjust the size to match the FXML's prefHeight and prefWidth
+        Scene scene = new Scene(root, 726, 546); // Adjust the size to match the FXML's prefHeight and prefWidth
         primaryStage.setTitle("ShrekFlix.exe");
         primaryStage.setScene(scene);
         primaryStage.show();

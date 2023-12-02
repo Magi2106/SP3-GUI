@@ -60,7 +60,7 @@ public class LoginController implements Initializable {
                         ((Node)(event.getSource())).getScene().getWindow().hide();
                         FXMLLoader loader = new FXMLLoader(getClass().getResource("Menu.fxml"));
                         Parent root = loader.load();
-                        userChoices.setScene(new Scene(root, 800, 600));
+                        userChoices.setScene(new Scene(root, 600, 400));
                         userChoices.show();
 
                     } catch (IOException e) {
@@ -100,7 +100,7 @@ public class LoginController implements Initializable {
                     try {
                         FXMLLoader loader = new FXMLLoader(getClass().getResource("Menu.fxml"));
                         Parent root = loader.load();
-                        userChoices.setScene(new Scene(root, 800, 600));
+                        userChoices.setScene(new Scene(root, 600, 400));
                         userChoices.show();
 
                     } catch (IOException e) {
@@ -109,7 +109,7 @@ public class LoginController implements Initializable {
                 });
 
             } else {
-                showErrorDialog("Error2", "An error occurred while loading the next screen.");
+                showErrorDialog("Register Success!", "You can now proceed to login!");
             }
         } catch (Exception e) {
             showErrorDialog("Error3", "An unexpected error occured: " + e.getMessage());

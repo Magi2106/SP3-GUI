@@ -122,7 +122,7 @@ public class MainController implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
             Parent root = loader.load();
 
-            userChoices.setScene(new Scene(root, 800, 600));
+            userChoices.setScene(new Scene(root, 600, 400));
             userChoices.show();
 
         } catch (IOException e) {
