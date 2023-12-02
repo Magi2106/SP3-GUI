@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ShrekTitle.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shrek.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" afterDir="false" />
+    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="Giga shrek is alive v2">
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml" afterDir="false" />
     </list>
     <list id="270f0e78-1154-4639-8c1a-ad1fb0b01d14" name="Changes by magnus" comment="" />
@@ -28,12 +22,24 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Magi2106&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="bc4053c7-d313-44eb-8c69-8fe26d269af9" />
+        <option name="url" value="https://github.com/Magi2106/SP3-GUI.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -44,43 +50,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "magnus",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/magnus/Documents/GitHub/SP3GUI",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/magnus/Documents/GitHub/SP3GUI/txt&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.sp3gui" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/txt" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="C:\Users\Gustav\Desktop\temp\SP3-master\SP3-GUI\src\main\java\com\example\sp3gui" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -96,9 +93,46 @@
       <workItem from="1700842071495" duration="1098000" />
       <workItem from="1700848403113" duration="494000" />
       <workItem from="1701337914243" duration="3740000" />
-      <workItem from="1701342719960" duration="10264000" />
-      <workItem from="1701366393734" duration="4426000" />
+      <workItem from="1701342719960" duration="10688000" />
+      <workItem from="1701360264045" duration="9907000" />
+      <workItem from="1701371176225" duration="1899000" />
+      <workItem from="1701376243762" duration="73000" />
+      <workItem from="1701376535410" duration="479000" />
+      <workItem from="1701386029707" duration="1210000" />
     </task>
+    <task id="LOCAL-00001" summary="Good shit">
+      <option name="closed" value="true" />
+      <created>1701360049744</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701360049744</updated>
+    </task>
+    <task id="LOCAL-00002" summary="txt">
+      <option name="closed" value="true" />
+      <created>1701371038186</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701371038187</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Giga shrek is alive v2">
+      <option name="closed" value="true" />
+      <created>1701373770048</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701373770048</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Giga shrek is alive v2">
+      <option name="closed" value="true" />
+      <created>1701373838353</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701373838353</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +148,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Good shit" />
+    <MESSAGE value="txt" />
+    <MESSAGE value="Giga shrek is alive v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Giga shrek is alive v2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
