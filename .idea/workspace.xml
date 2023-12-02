@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="txt">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" afterDir="false" />
+    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="Giga shrek is alive v2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/userSave.txt" beforeDir="false" afterPath="$PROJECT_DIR$/txt/userSave.txt" afterDir="false" />
     </list>
     <list id="270f0e78-1154-4639-8c1a-ad1fb0b01d14" name="Changes by magnus" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +98,9 @@
       <workItem from="1701342719960" duration="10688000" />
       <workItem from="1701360264045" duration="9907000" />
       <workItem from="1701371176225" duration="1899000" />
+      <workItem from="1701376243762" duration="73000" />
+      <workItem from="1701376535410" duration="479000" />
+      <workItem from="1701386029707" duration="1210000" />
     </task>
     <task id="LOCAL-00001" summary="Good shit">
       <option name="closed" value="true" />
@@ -114,7 +118,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701371038187</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Giga shrek is alive v2">
+      <option name="closed" value="true" />
+      <created>1701373770048</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701373770048</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Giga shrek is alive v2">
+      <option name="closed" value="true" />
+      <created>1701373838353</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701373838353</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +154,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Good shit" />
     <MESSAGE value="txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="txt" />
+    <MESSAGE value="Giga shrek is alive v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Giga shrek is alive v2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

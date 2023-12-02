@@ -13,7 +13,7 @@
                 <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
             </padding>
             <children>
-            <ImageView fx:id="Image1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="false"/>
+            <ImageView fx:id="Image1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true"/>
                 <TextField fx:id="usernameField" style="-fx-background-color: Orange;">
                <font>
                   <Font name="Comic Sans MS" size="12.0" />
