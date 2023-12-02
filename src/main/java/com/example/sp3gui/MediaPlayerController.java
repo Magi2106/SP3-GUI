@@ -26,7 +26,7 @@ public class MediaPlayerController implements Initializable{
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
 
-        file = new File("Media/ShrekInc.mp4");
+        file = new File("Media/Videomaterial.m4v");
         media = new Media(file.toURI().toString());
         mediaPlayer = new MediaPlayer(media);
         mediaView.setMediaPlayer(mediaPlayer);

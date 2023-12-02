@@ -39,14 +39,10 @@ public class MainController implements Initializable {
     @FXML
     public ListView<String> ListView3 = new ListView<String>();
 
-
-
     @Override
     public void initialize(URL var1, ResourceBundle var2) {
         loadLists();
 
-
-        // TODO: Randomizer & watchShrek buttons.
         // Skal ikke lukke menu window.
         // Skal loade mediaplayer
         // TODO: Add search method.
