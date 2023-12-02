@@ -1,6 +1,8 @@
 package com.example.sp3gui;
 
 import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -32,14 +34,25 @@ public class MainController implements Initializable {
     private TextArea outputArea;
     private FileIO io = new FileIO();
     private Media media;
+    @FXML
     public ListView<String> ListView1 = new ListView<String>();
+    @FXML
     public ListView<String> ListView2 = new ListView<String>();
+    @FXML
     public ListView<String> ListView3 = new ListView<String>();
     User currentUser = LoginController.currentUser;
+
+
     @Override
     public void initialize(URL var1, ResourceBundle var2) {
         loadLists();
+
     }
+
+
+
+
+
 
     // TODO: Make Media Buttons interactible.
     // TODO: Add method to save userMedia to FileIO with the currentUser object.
@@ -92,7 +105,7 @@ public class MainController implements Initializable {
 
     }
 
-    private void addSavedMedia(ActionEvent event) throws IOException {
+    private void addSavedMedia(String movie) throws IOException {
 
         if (currentUser != null) {
             io.saveMediaList(currentUser);
@@ -116,6 +129,49 @@ public class MainController implements Initializable {
             showErrorDialog("Logout", "Logged out");
         }
     }
+    @FXML
+    private void saveMedia(ActionEvent event) {
+
+
+        ListView1.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+            String currentMovie;
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                currentMovie = ListView1.getSelectionModel().getSelectedItem();
+
+                System.out.println(currentMovie);
+                //addSavedMedia(currentMovie);
+
+
+            }
+        });
+
+        ListView2.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+            String currentMovie;
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                currentMovie = ListView1.getSelectionModel().getSelectedItem();
+
+                System.out.println(currentMovie);
+
+
+            }
+        });
+
+        ListView3.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+            String currentMovie;
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                currentMovie = ListView1.getSelectionModel().getSelectedItem();
+
+                System.out.println(currentMovie);
+
+
+            }
+        });
+
+    }
+
 }
 
 
