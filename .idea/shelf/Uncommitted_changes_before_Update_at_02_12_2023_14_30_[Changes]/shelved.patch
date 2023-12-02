@@ -1,0 +1,150 @@
+Index: txt/userSave.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>anton; 123; 0; Shrek; Shrek, Dexter, Dekalog\r\n\r\n123; 123; 0; Shrek; Shrek\r\n; ; 0; Shrek; Shrek\r\nHornyBaby; 21312321; 0; Shrek; Shrek\r\nGustavMadladGodgamer2; ggezgonext; 0; Shrek; Shrek\r\nMeowcus; 213; 0; Shrek; Shrek\r\n123; 123; 0; Shrek; Shrek\r\nGigachadmax; 1234; 0; Shrek; Shrek\r\ngae; gae; 0; Shrek; Shrek
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/txt/userSave.txt b/txt/userSave.txt
+--- a/txt/userSave.txt	(revision 62d9b9ab233c7cfe6b4d1952042e9da33e065463)
++++ b/txt/userSave.txt	(date 1701372208968)
+@@ -7,4 +7,5 @@
+ Meowcus; 213; 0; Shrek; Shrek
+ 123; 123; 0; Shrek; Shrek
+ Gigachadmax; 1234; 0; Shrek; Shrek
+-gae; gae; 0; Shrek; Shrek
+\ No newline at end of file
++gae; gae; 0; Shrek; Shrek
++; ; 0; Shrek; Shrek
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f867f4a3-4dba-496b-bdac-1fb511170438\" name=\"Changes\" comment=\"Good shit\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/sp3gui/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/sp3gui/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/txt/userSave.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/txt/userSave.txt\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"270f0e78-1154-4639-8c1a-ad1fb0b01d14\" name=\"Changes by magnus\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"FxmlFile\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Magi2106&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"bc4053c7-d313-44eb-8c69-8fe26d269af9\" />\r\n        <option name=\"url\" value=\"https://github.com/Magi2106/SP3-GUI.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"LineStatusTrackerManager\">\r\n    <file path=\"$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java\">\r\n      <ranges>\r\n        <range start1=\"15\" end1=\"15\" start2=\"15\" end2=\"17\" changelist=\"270f0e78-1154-4639-8c1a-ad1fb0b01d14\" />\r\n        <range start1=\"17\" end1=\"17\" start2=\"19\" end2=\"20\" changelist=\"270f0e78-1154-4639-8c1a-ad1fb0b01d14\" />\r\n        <range start1=\"23\" end1=\"23\" start2=\"26\" end2=\"28\" changelist=\"f867f4a3-4dba-496b-bdac-1fb511170438\" />\r\n        <range start1=\"38\" end1=\"38\" start2=\"43\" end2=\"44\" changelist=\"f867f4a3-4dba-496b-bdac-1fb511170438\" />\r\n        <range start1=\"50\" end1=\"50\" start2=\"56\" end2=\"59\" changelist=\"f867f4a3-4dba-496b-bdac-1fb511170438\" />\r\n        <range start1=\"93\" end1=\"94\" start2=\"102\" end2=\"103\" changelist=\"f867f4a3-4dba-496b-bdac-1fb511170438\" />\r\n        <range start1=\"141\" end1=\"141\" start2=\"150\" end2=\"151\" changelist=\"f867f4a3-4dba-496b-bdac-1fb511170438\" />\r\n        <range start1=\"163\" end1=\"164\" start2=\"173\" end2=\"174\" changelist=\"f867f4a3-4dba-496b-bdac-1fb511170438\" />\r\n        <range start1=\"267\" end1=\"267\" start2=\"277\" end2=\"279\" changelist=\"270f0e78-1154-4639-8c1a-ad1fb0b01d14\" />\r\n        <range start1=\"312\" end1=\"313\" start2=\"324\" end2=\"331\" changelist=\"f867f4a3-4dba-496b-bdac-1fb511170438\" />\r\n      </ranges>\r\n    </file>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 4\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2YXQHXEhD9kQF1l9kwEs55UH9Lg\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateClassDialog.RecentsKey\">\r\n      <recent name=\"com.example.sp3gui\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Gustav\\Desktop\\temp\\SP3-master\\SP3-GUI\\src\\main\\java\\com\\example\\sp3gui\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f867f4a3-4dba-496b-bdac-1fb511170438\" name=\"Changes\" comment=\"\" />\r\n      <created>1700669360949</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700669360949</updated>\r\n      <workItem from=\"1700669361963\" duration=\"1433000\" />\r\n      <workItem from=\"1700742477818\" duration=\"21474000\" />\r\n      <workItem from=\"1700831583480\" duration=\"10405000\" />\r\n      <workItem from=\"1700842071495\" duration=\"1098000\" />\r\n      <workItem from=\"1700848403113\" duration=\"494000\" />\r\n      <workItem from=\"1701337914243\" duration=\"3740000\" />\r\n      <workItem from=\"1701342719960\" duration=\"10688000\" />\r\n      <workItem from=\"1701360264045\" duration=\"9907000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Good shit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701360049744</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701360049744</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Good shit\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Good shit\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"java.lang.reflect.InvocationTargetException\" package=\"java.lang.reflect\" />\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 62d9b9ab233c7cfe6b4d1952042e9da33e065463)
++++ b/.idea/workspace.xml	(date 1701519873954)
+@@ -4,11 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="Good shit">
++    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="Billeder added">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/txt/userSave.txt" beforeDir="false" afterPath="$PROJECT_DIR$/txt/userSave.txt" afterDir="false" />
+     </list>
+     <list id="270f0e78-1154-4639-8c1a-ad1fb0b01d14" name="Changes by magnus" comment="">
+@@ -44,22 +41,6 @@
+       </UrlAndAccount>
+     </option>
+   </component>
+-  <component name="LineStatusTrackerManager">
+-    <file path="$PROJECT_DIR$/src/main/java/com/example/sp3gui/MainController.java">
+-      <ranges>
+-        <range start1="15" end1="15" start2="15" end2="17" changelist="270f0e78-1154-4639-8c1a-ad1fb0b01d14" />
+-        <range start1="17" end1="17" start2="19" end2="20" changelist="270f0e78-1154-4639-8c1a-ad1fb0b01d14" />
+-        <range start1="23" end1="23" start2="26" end2="28" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
+-        <range start1="38" end1="38" start2="43" end2="44" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
+-        <range start1="50" end1="50" start2="56" end2="59" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
+-        <range start1="93" end1="94" start2="102" end2="103" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
+-        <range start1="141" end1="141" start2="150" end2="151" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
+-        <range start1="163" end1="164" start2="173" end2="174" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
+-        <range start1="267" end1="267" start2="277" end2="279" changelist="270f0e78-1154-4639-8c1a-ad1fb0b01d14" />
+-        <range start1="312" end1="313" start2="324" end2="331" changelist="f867f4a3-4dba-496b-bdac-1fb511170438" />
+-      </ranges>
+-    </file>
+-  </component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 4
+ }</component>
+@@ -69,22 +50,23 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "WebServerToolWindowFactoryState": "false",
++    "codeWithMe.voiceChat.enabledByDefault": "false",
++    "git-widget-placeholder": "master",
++    "ignore.virus.scanning.warn.message": "true",
++    "last_opened_file_path": "C:/Users/Gustav/Desktop/Sp3 gui2/SP3-GUI-magnus",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="CreateClassDialog.RecentsKey">
+       <recent name="com.example.sp3gui" />
+@@ -108,7 +90,8 @@
+       <workItem from="1700848403113" duration="494000" />
+       <workItem from="1701337914243" duration="3740000" />
+       <workItem from="1701342719960" duration="10688000" />
+-      <workItem from="1701360264045" duration="9907000" />
++      <workItem from="1701360264045" duration="13775000" />
++      <workItem from="1701519845301" duration="29000" />
+     </task>
+     <task id="LOCAL-00001" summary="Good shit">
+       <option name="closed" value="true" />
+@@ -118,7 +101,23 @@
+       <option name="project" value="LOCAL" />
+       <updated>1701360049744</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Good shit 2">
++      <option name="closed" value="true" />
++      <created>1701370754261</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1701370754261</updated>
++    </task>
++    <task id="LOCAL-00003" summary="Billeder added">
++      <option name="closed" value="true" />
++      <created>1701370787857</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1701370787857</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -137,7 +136,9 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Good shit" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Good shit" />
++    <MESSAGE value="Good shit 2" />
++    <MESSAGE value="Billeder added" />
++    <option name="LAST_COMMIT_MESSAGE" value="Billeder added" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
