@@ -9,18 +9,11 @@ import java.io.IOException;
 
 public class Main extends Application {
 
-
     public static void main(String[] args) {
         launch(args);
-
     }
-// 1. LAV SAVED MEDIA LISTE SÅ MAN KAN SE DEN / DEN OPDATERE SIG SELV.
-// 2. GUstav CLEANER LORTET UP SÅ DET SER BANGER UD OG LIGNER PORNHUB!
-// 3. Save metoder til user watched/saved media.
 
     public void start(Stage primaryStage) throws IOException {
-
-// Load the FXML file for the login screen
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Login.fxml"));
         // Create the root node as Pane by loading the FXML
         Pane root = fxmlLoader.load();
@@ -28,8 +21,6 @@ public class Main extends Application {
         primaryStage.setTitle("ShrekFlix.exe");
         primaryStage.setScene(scene);
         primaryStage.show();
-
-
     }
 }
 
