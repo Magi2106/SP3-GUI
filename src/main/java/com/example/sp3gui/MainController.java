@@ -99,10 +99,8 @@ public class MainController implements Initializable {
     private void addSavedMedia(String movie) throws IOException {
         User currentUser = LoginController.currentUser;
 
-        if (currentUser != null) {
-            currentUser.watchedMedia.add(movie);
-            io.saveMediaList(currentUser);
-        }
+        currentUser.getSavedMedia().add(movie);
+        io.saveMediaList(currentUser);
 
     }
 
@@ -125,6 +123,18 @@ public class MainController implements Initializable {
 
     @FXML
     private void saveMedia(ActionEvent event) {
+
+        String selectedMovie = getSelectedMovie();
+        if (selectedMovie != null) {
+            try {
+                addSavedMedia(selectedMovie);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
+        /*
 
         ListView1.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
             String currentMovie;
@@ -162,6 +172,9 @@ public class MainController implements Initializable {
         });
 
         ListView3.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+
+
+
             String currentMovie;
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
@@ -180,8 +193,29 @@ public class MainController implements Initializable {
 
     }
 
-    public void WatchButton(ActionEvent event) {
+         */
 
+    public void WatchButton(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("MediaPlayer.fxml"));
+            Parent root = loader.load();
+            userChoices.setScene(new Scene(root, 600, 400));
+            userChoices.show();
+
+        } catch (IOException e) {
+            e.getStackTrace();
+        }
+    }
+
+    private String getSelectedMovie() {
+        String selectedFromListView1 = ListView1.getSelectionModel().getSelectedItem();
+        String selectedFromListView2 = ListView2.getSelectionModel().getSelectedItem();
+        String selectedFromListView3 = ListView3.getSelectionModel().getSelectedItem();
+
+        // Return the selected item from any ListView or null if none is selected
+        return selectedFromListView1 != null ? selectedFromListView1 :
+                selectedFromListView2 != null ? selectedFromListView2 :
+                        selectedFromListView3;
     }
 }
 

@@ -26,7 +26,7 @@ public class MediaPlayerController implements Initializable{
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
 
-        file = new File("C:\\Users\\Gustav\\Desktop\\temp\\SP3-master\\SP3-GUI\\src\\main\\java\\com\\example\\sp3gui\\ShrekInc.mp4");
+        file = new File("Media/ShrekInc.mp4");
         media = new Media(file.toURI().toString());
         mediaPlayer = new MediaPlayer(media);
         mediaView.setMediaPlayer(mediaPlayer);
@@ -44,7 +44,6 @@ public class MediaPlayerController implements Initializable{
     }
 
     public void resetMedia() {
-
         if(mediaPlayer.getStatus() != MediaPlayer.Status.READY) {
             mediaPlayer.seek(Duration.seconds(0.0));
         }

@@ -11,7 +11,7 @@
             <VBox alignment="TOP_CENTER" prefHeight="298.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                <children>
                   <Button fx:id="WatchButton" mnemonicParsing="false" onAction="#WatchButton" prefHeight="60.0" prefWidth="105.0" style="-fx-background-color: #ffa31a;" text="Watch" textFill="WHITE" />
-                  <Button mnemonicParsing="false" prefHeight="66.0" prefWidth="105.0" style="-fx-background-color: #292929;" text="Save media" textFill="WHITE" />
+                  <Button mnemonicParsing="false" prefHeight="66.0" prefWidth="105.0" onAction="#saveMedia" style="-fx-background-color: #292929;" text="Save media" textFill="WHITE" />
                   <Button fx:id="RandomizeButton" mnemonicParsing="false" onAction="#WatchButton" prefHeight="56.0" prefWidth="100.0" style="-fx-background-color: #808080;" text="Randomize" textFill="WHITE" />
                   <Button fx:id="ShrekButton" mnemonicParsing="false" onAction="#WatchButton" prefHeight="59.0" prefWidth="101.0" style="-fx-background-color: #292929;" text="Shrek?" textFill="WHITE" />
                   <Button fx:id="LogOut" mnemonicParsing="false" onAction="#LogOutButton" prefHeight="67.0" prefWidth="106.0" style="-fx-background-color: #1b1b1b;" text="Logout" textFill="WHITE" />
