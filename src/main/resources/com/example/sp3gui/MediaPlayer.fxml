@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1b1b1b;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sp3gui.MediaPlayerController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <MediaView fx:id="mediaView" fitHeight="300.0" fitWidth="500.0" layoutX="50.0" layoutY="50.0" />
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="PauseButton" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="100.0" prefWidth="207.0" style="-fx-background-color: #808080;" text="Pause" textFill="WHITE" />
+                  <Button fx:id="PlayButton" mnemonicParsing="false" onAction="#playMedia" prefHeight="100.0" prefWidth="190.0" style="-fx-background-color: #ffa31a;" text="Play" textFill="WHITE" />
+                  <Button fx:id="ResetButton" mnemonicParsing="false" onAction="#resetMedia" prefHeight="100.0" prefWidth="204.0" style="-fx-background-color: #292929;" text="Reset" textFill="WHITE" />
+               </children>
+            </HBox>
+         </bottom></BorderPane>
+   </children>
+</AnchorPane>
