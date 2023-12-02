@@ -41,10 +41,8 @@ public class MainController implements Initializable {
         loadLists();
     }
 
-    // TODO: Add method to save userMedia to FileIO with the currentUser object.
     // TODO: Make Media Buttons interactible.
-    // Get user from io.login, is it necessary to split apart classes? Other solutions?
-    // Remember to call the method within ActionEvent methods, for automatic saving.
+    // TODO: Add method to save userMedia to FileIO with the currentUser object.
     // TODO: Add search method.
     // TODO: Clean up variable access identifiers (public/private).
     // TODO: Add poster art as user interactable buttons?
