@@ -20,7 +20,7 @@
                </font></TextField>
                 <PasswordField fx:id="passwordField" prefHeight="25.0" prefWidth="602.0" style="-fx-background-color: Orange;" />
                 <Button fx:id="loginButton" onAction="#loginPressed" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: Orange;" text="Login" />
-                <Button fx:id="signupbutton" onAction="#registerPressed" style="-fx-background-color: Orange;" text="Register!" />
+                <Button fx:id="registerButton" onAction="#registerPressed" style="-fx-background-color: Orange;" text="Register!" />
             </children>
         </VBox>
     </children>

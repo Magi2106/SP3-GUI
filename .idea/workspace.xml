@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="Giga shrek is alive v2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sp3gui/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/userSave.txt" beforeDir="false" afterPath="$PROJECT_DIR$/txt/userSave.txt" afterDir="false" />
     </list>
     <list id="270f0e78-1154-4639-8c1a-ad1fb0b01d14" name="Changes by magnus" comment="" />
     <option name="SHOW_DIALOG" value="false" />
