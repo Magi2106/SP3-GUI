@@ -22,33 +22,32 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
-
+    private FileIO io = new FileIO();
     @FXML
-    ImageView Image1 = new ImageView();
+    private ImageView Image1 = new ImageView();
     @FXML
-    Stage userChoices = new Stage();
-    FileIO io = new FileIO();
+    private Stage userChoices = new Stage();
     public static User currentUser;
     @FXML
-    private Button loginButton;
+    private Button loginButton, registerButton;
     @FXML
-    private Button registerButton;
-    @FXML
-   public TextField usernameField;
-    @FXML
-    public TextField passwordField;
-    @FXML
-    private TextArea outputArea;
+    private TextField usernameField, passwordField;;
 
     @Override
     public void initialize(URL var1, ResourceBundle var2) {
         Image image = new Image("file:Media/ShrekTitle.png");
         Image1.setImage(image);  // Shrek background
-
+    }
+    private void showErrorDialog(String title, String content) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(content);
+        alert.showAndWait();
     }
 
     @FXML
-    void loginPressed(ActionEvent event) {
+    private void loginPressed(ActionEvent event) {
         try {
             currentUser = io.login(usernameField.getText(), passwordField.getText());
 
@@ -76,14 +75,6 @@ public class LoginController implements Initializable {
         } catch (Exception e) {
             showErrorDialog("Error4", "An unexpected error occured: " + e.getMessage());
         }
-    }
-
-    private void showErrorDialog(String title, String content) {
-        Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setTitle(title);
-        alert.setHeaderText(null);
-        alert.setContentText(content);
-        alert.showAndWait();
     }
 
     // Creates a new user.

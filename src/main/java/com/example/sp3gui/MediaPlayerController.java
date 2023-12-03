@@ -12,38 +12,34 @@ import javafx.scene.media.MediaView;
 import javafx.util.Duration;
 
 public class MediaPlayerController implements Initializable{
-
     @FXML
     private MediaView mediaView;
-
     @FXML
     private Button playButton, pauseButton, resetButton;
-
     private File file;
     private Media media;
     private MediaPlayer mediaPlayer;
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
-
         file = new File("Media/Videomaterial.m4v");
         media = new Media(file.toURI().toString());
         mediaPlayer = new MediaPlayer(media);
         mediaView.setMediaPlayer(mediaPlayer);
-
     }
 
-    public void playMedia() {
-
+    @FXML
+    private void playMedia() {
         mediaPlayer.play();
     }
 
-    public void pauseMedia() {
-
+    @FXML
+    private void pauseMedia() {
         mediaPlayer.pause();
     }
 
-    public void resetMedia() {
+    @FXML
+    private void resetMedia() {
         if(mediaPlayer.getStatus() != MediaPlayer.Status.READY) {
             mediaPlayer.seek(Duration.seconds(0.0));
         }

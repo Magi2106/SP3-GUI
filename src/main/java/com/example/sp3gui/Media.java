@@ -25,8 +25,4 @@ public abstract class Media {
         return categories;
     }
 
-    @Override
-    public String toString() {
-        return getTitle();
-    }
 }
