@@ -7,6 +7,7 @@ import java.util.List;
 public class Chill {
     private final FileIO io = new FileIO();
     private final TextUI ui = new TextUI();
+    private User currentUser;
     public List<Media> movieList = io.loadMovies();
     public List<Media> seriesList = io.loadSeries();
 
@@ -35,7 +36,7 @@ public class Chill {
     public List<Media> searchByName(String query,List<Media> list){
         List<Media> searchedList = new ArrayList<>();
         for(Media m:list){
-            if (m.getTitle().toLowerCase().contains(query.toLowerCase())) {
+            if(m.getTitle().contains(query)){
                 searchedList.add(m);
             }
         }
@@ -46,7 +47,7 @@ public class Chill {
     public List<Media> searchByCategory(String category,List<Media> list){
         List<Media> searchedList = new ArrayList<>();
         for(Media m:list){
-            if (m.getCategories().stream().anyMatch(c -> c.equalsIgnoreCase(category))) {
+            if(m.getCategories().contains(category)){
                 searchedList.add(m);
             }
         }

@@ -3,12 +3,17 @@ package com.example.sp3gui;
 import java.io.FileNotFoundException;
 import java.util.List;
 
+import java.io.FileNotFoundException;
+import java.sql.SQLException;
+import java.util.List;
+
 public interface IO {
-    public List<Media> loadSeries();
-    public List<Media> loadMovies();
+    public List<Media> loadSeries() throws SQLException;
+    public List<Media> loadMovies() throws SQLException;
     // public List<User> loadUsers();
     public List<String> loadUserMedia(User u) throws FileNotFoundException;
-    public List<Media> loadList();
-    public void createUser(String username, String password, int age);
+    public List<Media> loadList() throws SQLException;
     public User login(String username, String password) throws FileNotFoundException;
+
+    public List<String> getCategories() throws SQLException;
 }

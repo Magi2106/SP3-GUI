@@ -133,10 +133,8 @@ public class FileIO implements IO {
                     .map(String::trim)
                     .collect(Collectors.toList());
 
-            users.add(new User(name, password, age, userWatchedMedia, userSavedMedia));
+            users.add(new User(name, password, userWatchedMedia, userSavedMedia));
         }
-
-
         return users;
     }
 

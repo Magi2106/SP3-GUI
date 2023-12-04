@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="Merge 'magnus' into master" />
+    <list default="true" id="f867f4a3-4dba-496b-bdac-1fb511170438" name="Changes" comment="Fix access modifiers">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/DBConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Shrek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Chill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Chill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/FileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/FileIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/IO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/IO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/ShrekInc.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/ShrekTitle.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/TextUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/TextUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sp3gui/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/userSave.txt" beforeDir="false" afterPath="$PROJECT_DIR$/txt/userSave.txt" afterDir="false" />
+    </list>
     <list id="270f0e78-1154-4639-8c1a-ad1fb0b01d14" name="Changes by magnus" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +131,10 @@
       <workItem from="1701519591936" duration="3370000" />
       <workItem from="1701532697157" duration="1780000" />
       <workItem from="1701547711616" duration="215000" />
+      <workItem from="1701553620993" duration="1803000" />
+      <workItem from="1701559654605" duration="172000" />
+      <workItem from="1701561105638" duration="1532000" />
+      <workItem from="1701655416224" duration="925000" />
     </task>
     <task id="LOCAL-00001" summary="Good shit">
       <option name="closed" value="true" />
@@ -230,7 +248,39 @@
       <option name="project" value="LOCAL" />
       <updated>1701547921670</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Merge 'magnus' into master">
+      <option name="closed" value="true" />
+      <created>1701553871960</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701553871960</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Merge 'magnus' into master">
+      <option name="closed" value="true" />
+      <created>1701554695242</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701554695242</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Merge 'magnus' into master">
+      <option name="closed" value="true" />
+      <created>1701554812156</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701554812156</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fix access modifiers">
+      <option name="closed" value="true" />
+      <created>1701562615252</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701562615252</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +307,8 @@
     <MESSAGE value="Fixed boilerplate code" />
     <MESSAGE value="Små fixxses" />
     <MESSAGE value="Merge 'magnus' into master" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge 'magnus' into master" />
+    <MESSAGE value="Fix access modifiers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix access modifiers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
